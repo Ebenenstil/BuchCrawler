@@ -7,8 +7,9 @@ import sys
 url = "https://amzn.to/3krfzQN"
 labels=["Titel","Link","Rang"]
 
+#datei1[:-4]+
 datei1 = sys.argv[1]
-dateix = datei1[:-4]+"_CSV_Export.csv"
+dateix = "/home/pi/Documents/BuchCrawler/Export.csv"
 
 
 ausgabedatei = Path(dateix)
