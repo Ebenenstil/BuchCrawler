@@ -4,6 +4,7 @@
 import pandas as pd
 import sys
 
+
 def htmlausgabe(csvfile,name):
 
   df=pd.read_csv(csvfile)
@@ -77,11 +78,8 @@ def htmlausgabe(csvfile,name):
   </style>
   '''
   emailfinal=emailheader + htmlheader + htmltable
-  pfadhtml=name[:-4]+"_HTML_Export.html"
+  pfadhtml=name[:-4]+"_Export.html"
   f = open(pfadhtml,"w")
   f.write(emailfinal)
   f.close()
-
-
-
 
