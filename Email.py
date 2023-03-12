@@ -5,9 +5,9 @@ from email.mime.application import MIMEApplication
 
 def send_email(html_file_path, recipient_email):
     # Öffnen Sie die HTML-Datei und lesen Sie ihren Inhalt
-    sender_email = "dkspider21@gmail.com"
+    sender_email = "kontakt@davidknospe.de"
     sender_password ="#Knospe2020$"
-    smtp_server ="smtp.gmail.com"
+    smtp_server ="smtp.strato.de"
     smtp_port ="465"
     with open(html_file_path, "r") as f:
         html_content = f.read()
@@ -32,4 +32,6 @@ def send_email(html_file_path, recipient_email):
         server.starttls()
         server.login(sender_email, sender_password)
         server.sendmail(sender_email, recipient_email, message.as_string())
-send_email("Vanessa_Export.html", "dkspider@t-online.de")
+
+
+send_email("Vanessa_Export.html","dkspider@t-online.de")
