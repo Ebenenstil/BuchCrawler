@@ -1,14 +1,15 @@
 # BuchCrawler
-Amazon Rang von Büchern auslesen und verarbeiten
+Amazon Rang von Büchern auslesen und verarbeiten:
 
 Url des Buchs wird benötigt.
-Der Rang wird dann ausgegeben. 
+Der Rang wird dann ausgegeben.
+Aktuell ist geplant dass die Liste der Bücher via CSV eingelesen wird und dann als HTML Datei per Email versendet wird.
 
 Geplante:
 x Einlesen von CSV für die Links
 x Einlesen des Titels von der Seite / aus der CSV
 x Schreiben in CSV des Rangs
-- CSV mit Historie ?!
+- CSV/JSON mit Historie ?!
 - Versand via Email getimed einmal im Monat/Woche
 
 Öffnen der via :
